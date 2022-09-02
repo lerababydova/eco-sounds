@@ -1,0 +1,159 @@
+html {
+  scroll-behavior: smooth;
+  font-family: inter;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: calc(100% - 40px);
+  max-width: 1400px;
+}
+
+.header {
+  height: 60px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 50px;
+}
+
+.header-logo {
+  height: 50px;
+  color: #fff;
+  font-size: 20px;
+  line-height: 50px;
+  transition: 0.3s;
+  cursor: pointer;
+  background-image: url(./assets/svg/logo.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.header-logo:hover,
+.header-logo.active {
+  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+}
+
+.nav-links {
+  list-style-type: none;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin: 0 15px;
+  color: #fff;
+  font-size: 20px;
+  line-height: 50px;
+  transition: 0.3s;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.nav-item:hover {
+  color: #bdae82;
+}
+
+.nav-item.active {
+  color: #bdae82;
+}
+
+.main {
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./assets/img/forest.jpg);
+  background-size: cover;
+}
+
+.toggle-button {
+  width: 160px;
+  height: 160px;
+  background-color: transparent;
+  background-size: contain;
+  border: none;
+  background-image: url(./assets/svg/play.svg);
+  transition: 0.3s;
+}
+
+.toggle-button:hover {
+  filter: brightness(0.85);
+}
+
+.footer {
+  background-color: black;
+  flex-shrink: 0;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 20px;
+  margin: 0 auto;
+}
+
+.date-section {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 50px;
+}
+
+.date-symbol {
+  margin: 0 20px 0 0;
+}
+
+.date-year {
+  margin: 0 20px 0 0;
+}
+
+.my-github {
+  font-size: 20px;
+  line-height: 50px;
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 300ms;
+}
+
+.my-github:hover {
+  color: #bdae82;
+}
+
+.rs-link {
+  height: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.rs-logo {
+  height: 100%;
+}
+
+.rs-link:hover {
+  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+}
+
+@media (max-width: 1440px) {
+  .container {
+    width: calc(100% - 40px);
+  }
+}
